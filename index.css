@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1B1924;
+    color: white;
+    
+}   
+#container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;  
+    max-width: 370px;
+    margin: 30px auto;
+    
+}
+#title{
+    margin: 20px 0;
+    color: white;
+}
+#freddie-img{
+    width: 150px;
+    margin: 0 auto;
+    user-select: none;
+}
+.input-style{
+    background: #444059;
+    border: none;
+    border-radius: 5px;
+    caret-color:white;
+    color:white;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+#endorsement-el{
+    padding: 10px;
+    height: 100px;
+    resize: none;
+
+}
+#endorsement-el::-webkit-scrollbar {
+    width: 7px;
+    
+}
+
+#endorsement-el::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #999999;
+}
+#endorsement-el::-webkit-scrollbar-thumb:active {
+    background: #7c7c7c;
+    
+}
+#endorsement-el::-webkit-scrollbar-thumb {
+  background: #272532;
+  border: none;
+  border-radius: 30px;
+}
+#to-from-el{
+    margin: 8px 0;
+    display: flex;
+    grid-gap: 10px; 
+
+}
+#from-el, #to-el{
+    text-align: center;
+    padding: 10px;
+
+}
+#publish-btn{
+    width: 100%;
+    border-radius: 5px;
+    background: #28A9F1;
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+#endorsement-title{
+    margin: 15px;
+}
+#post-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    
+    align-items: stretch;
+    gap: 15px;
+    color: white;
+    font-size: 12px;
+}
+
+.post{
+    
+    padding: 15px 10px;
+    background:white;
+    color: black;
+    
+}
+.user{
+    margin: 0;
+    font-weight: bold;
+    
+}
+.like-from-container{
+    display: flex;
+}
+
+.like-button .heart-icon{
+    user-select: none;
+    height: 30px;
+    width: 30px;
+    background: url("assets/heart.png");
+    background-position: left;
+    cursor: pointer;    
+    position: absolute;
+}
+
+.like-button .heart-icon.liked{
+    animation: like-anim 0.7s steps(28) forwards;
+}
+
+
+@keyframes  like-anim {
+    to{
+        background-position: right;
+    }
+}
+
+.like-button .heart-icon.likedA{
+    background-position: right;
+}
+.like-button .heart-bg{
+    background: rgba(255, 192, 200, 0);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms;
+
+}
+
+.like-button .heart-bg:hover{
+    background: rgba(255, 192, 200, 0.7);
+}
+
+.like-button{
+    padding: 0;
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+}
+.like-button .likes{
+    user-select: none;
+    font-weight: bold;
+}
